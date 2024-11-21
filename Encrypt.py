@@ -4,7 +4,7 @@ from cryptography.fernet import Fernet
 files = []
 
 for file in os.listdir("files"):
-    full_path = os.path.join("files", file)
+    full_path = os.path.join("files", file) # concat the origin folder with the inner folder and its files
     if os.path.isfile(full_path):
         files.append(file)
 
